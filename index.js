@@ -19,6 +19,10 @@ const transporter = nodemailer.createTransport({
   },
 });
 
+app.get('/', (req, res) => {
+  res.send('Hello, World!');
+});
+
 app.post('/send-email', (req, res) => {
   const { name, email, phone, subject, description } = req.body;
   console.log('Received data:', req.body); // Log the incoming data
