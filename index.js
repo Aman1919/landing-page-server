@@ -34,14 +34,17 @@ app.post('/send-email', (req, res) => {
 
   const mailOptions = {
     from: '<no-reply@gmail.com>', // Your sender email
-    to: "amansample786@gmail.com", // Recipient's email
+    to: "ip@kieshvaintellect.com", // Recipient's email
     subject: subject || 'New Enquiry',
     text: `You have received a new enquiry from:
     
     Name: ${name}
     Email: ${email}
     Phone: ${phone}
-    Message: ${description}`,
+    Message: ${description}
+
+www.kieshvaintellect.com
+`,
   };
 
   transporter.sendMail(mailOptions, (error, info) => {
