@@ -34,7 +34,7 @@ app.post('/send-email', (req, res) => {
 
   const mailOptions = {
     from: '<no-reply@gmail.com>', // Your sender email
-    to: "ip@kieshvaintellect.com", // Recipient's email
+    to: "kieshvaintellect@gmail.com", // Recipient's email
     subject: subject || 'New Enquiry',
     text: `You have received a new enquiry from:
     
